@@ -49,3 +49,4 @@
 /home/eproc-lucas/RiderProjects/xmap_project/xmap_project/obj/Debug/net8.0/xmap_project.pdb
 /home/eproc-lucas/RiderProjects/xmap_project/xmap_project/obj/Debug/net8.0/xmap_project.genruntimeconfig.cache
 /home/eproc-lucas/RiderProjects/xmap_project/xmap_project/obj/Debug/net8.0/ref/xmap_project.dll
+/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/obj/Debug/net8.0/xmap_project.sourcelink.json
