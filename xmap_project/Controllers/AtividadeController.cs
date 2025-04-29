@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 [ApiController]
 [Route("[controller]")]
-public class AtividadeController : Controller
+public class AtividadeController : ControllerBase
 {
     private readonly IAtividadeService _atividadeService;
 

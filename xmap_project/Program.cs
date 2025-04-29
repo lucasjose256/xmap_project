@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using xmap_project.Data;
+using xmap_project.Services;
+using xmap_project.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,10 @@ builder.Services.AddCors(options =>
 
 // Adiciona suporte a controllers
 builder.Services.AddControllers();
+builder.Services.AddScoped<IAtividadeService, AtividadeService>();
+builder.Services.AddScoped<IProcessService, ProcessService>();
+
+//builder.Services.AddScoped<IAtividadeService, AtividadeService>();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
