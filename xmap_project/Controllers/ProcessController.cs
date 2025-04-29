@@ -71,33 +71,31 @@ public class ProcessController : ControllerBase
 
         return Ok(processes);
     }
-    [HttpPost("{processId}/atividade")]
-    public async Task<IActionResult> AddAtividade(int processId, [FromBody] CreateAtividadeRequest request)
+ 
+ 
+    [HttpPost("atividade/{atividadeId}/metadado")]
+    public async Task<IActionResult> AddMetaDado(int atividadeId, [FromBody] MetaDadosRequest request)
     {
-        var process = await _context.process
-            .Include(p => p.atividades)
-            .FirstOrDefaultAsync(p => p.id == processId);
+        var atividade = await _context.atividade
+            .Include(a => a.metaDados)
+            .FirstOrDefaultAsync(a => a.id == atividadeId);
 
-        if (process == null)
-            return NotFound("Processo não encontrado.");
+        if (atividade == null)
+            return NotFound("Atividade não encontrada.");
 
-        var atividade = new Atividade
+        var metaDado = new MetaDados
         {
-            nomeAtividade = request.NomeAtividade,
-            processId = processId,
-            metaDados = new MetaDados
-            {
-                dados = request.MetaDados.Dados,
-                ator = request.MetaDados.Ator,
-                lgpd = request.MetaDados.Lgpd
-            }
+            dados = request.Dados,
+            ator = request.Ator,
+            lgpd = request.Lgpd,
+            atividadeId = atividadeId
         };
 
-        _context.atividade.Add(atividade);
+        _context.metaDados.Add(metaDado);
         await _context.SaveChangesAsync();
-        return Ok(new { message = "Atividade adicionada com sucesso!", atividadeId = atividade.id });
+    
+        return Ok(new { message = "Metadado adicionado com sucesso!", metaDadoId = metaDado.id });
     }
-
     [HttpGet("xml/{id}")]
     public async Task<IActionResult> GetXml(int id)
     {
@@ -107,8 +105,22 @@ public class ProcessController : ControllerBase
 
         return Ok(process.xmlDiagrama);
     }
+    
+ 
+    [HttpGet("getMetadados")]
+    public async Task<IActionResult> GetMetadadosTask()
+    {
+        var processes = await _context.metaDados
+            .Select(p => new
+            { p.id,
+           p.ator,
+           p.dados,
+           p.lgpd,
+            })
+            .ToListAsync();
 
-
+        return Ok(processes);
+    }
     // Deletar processo
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteProcess(int id)
@@ -122,16 +134,10 @@ public class ProcessController : ControllerBase
 
         return Ok(new { message = "Processo deletado com sucesso!" });
     }
-    public class CreateAtividadeRequest
-    {
-        public string NomeAtividade { get; set; }
-        public MetaDadosRequest MetaDados { get; set; }
-    }
+   
     
-    public class MetaDadosRequest
-    {
-        public string Dados { get; set; }
-        public string Ator { get; set; }
-        public string Lgpd { get; set; }
-    }
+    
+ 
+    
+    
 }
