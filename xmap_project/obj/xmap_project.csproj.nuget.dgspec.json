@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/xmap_project.csproj": {}
+    "C:\\Users\\lucas\\Source\\Repos\\lucasjose256\\xmap_project\\xmap_project\\xmap_project.csproj": {}
   },
   "projects": {
-    "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/xmap_project.csproj": {
+    "C:\\Users\\lucas\\Source\\Repos\\lucasjose256\\xmap_project\\xmap_project\\xmap_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/xmap_project.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\Source\\Repos\\lucasjose256\\xmap_project\\xmap_project\\xmap_project.csproj",
         "projectName": "xmap_project",
-        "projectPath": "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/xmap_project.csproj",
-        "packagesPath": "/home/eproc-lucas/.nuget/packages/",
-        "outputPath": "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/obj/",
+        "projectPath": "C:\\Users\\lucas\\Source\\Repos\\lucasjose256\\xmap_project\\xmap_project\\xmap_project.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\Source\\Repos\\lucasjose256\\xmap_project\\xmap_project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/eproc-lucas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,6 +61,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[4.0.2, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -93,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

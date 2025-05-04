@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\xmap_project",
+    "\\xmap_project\\Controllers",
+    "\\xmap_project\\Data",
+    "\\xmap_project\\Services",
+    "\\xmap_project\\Services\\Interfaces"
+  ],
+  "SelectedNode": "\\xmap_project\\Controllers\\LoginController.cs",
+  "PreviewInSolutionExplorer": false
+}

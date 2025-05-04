@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace xmap_project.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("login")]
     public class LoginController : ControllerBase
     {
         private readonly AppDbContext _context;

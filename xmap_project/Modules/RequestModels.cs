@@ -20,3 +20,11 @@ public class CreateProcessRequest
     public string Description { get; set; }
     public string? UserLastEdited { get; set; }
 }
+public class MetaDadoInput
+{
+    public string TextoCompleto { get; set; }
+}
+public class MetaDadoTransformado
+{
+    public float[] Features { get; set; }
+}
