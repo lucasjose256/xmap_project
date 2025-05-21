@@ -8,8 +8,10 @@ namespace xmap_project.Modules;
         public string username { get; set; }
         
         public string email { get; set; }
-        // Em um cenário real, use um hash para a senha!
         public string password { get; set; }
+        
+        public DateTime? dataCreated { get; set; }
+        
         
     }
 

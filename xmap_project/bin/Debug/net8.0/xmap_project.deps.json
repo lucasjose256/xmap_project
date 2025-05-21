@@ -311,17 +311,17 @@
           "runtimes/win-arm64/native/LdaNative.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.2200.225.12505"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/LdaNative.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.2200.225.12505"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/LdaNative.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.2200.225.12505"
+            "fileVersion": "0.0.0.0"
           }
         }
       },

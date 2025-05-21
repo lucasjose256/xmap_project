@@ -1,6 +1,8 @@
 @xmap_project_HostAddress = http://localhost:5266
 
-GET {{xmap_project_HostAddress}}/weatherforecast/
+GET {{xmap_project_HostAddress}}/Process/
 Accept: application/json
 
 ###
+GET {{xmap_project_HostAddress}}/Process/getMetadados
+Accept: application/json

@@ -9,7 +9,6 @@ public class Process
     public string? userLastEdited { get; set; }
     public string? urlProcess  {get; set;}
     public string xmlDiagrama  {get; set;}
-    
     public List<Atividade> atividades { get; set; }
      
 }

@@ -102,8 +102,6 @@ namespace xmap_project.Services
         public async Task<bool> DeleteProcessAsync(int id)
         {
 
-            //adicionar a uma tabela de arquivados...
-
             var process = await _context.process.FindAsync(id);
             if (process == null)
                 return false;
@@ -112,11 +110,6 @@ namespace xmap_project.Services
             await _context.SaveChangesAsync();
             return true;
         }
-
-
-
-
-
 
 
     }

@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\xmap_project.props" />
+  <Import Project="../build/xmap_project.props" />
 </Project>

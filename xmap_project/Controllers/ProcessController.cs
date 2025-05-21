@@ -1,17 +1,7 @@
 using System.Xml;
 using Microsoft.AspNetCore.Mvc;
-using xmap_project.Data;
 using xmap_project.Modules;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 using xmap_project.Services.Interfaces;
-using xmap_project.Modules;
 
 namespace xmap_project.Controllers;
 [ApiController]

@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\buildMultiTargeting\xmap_project.props" />
+  <Import Project="../buildMultiTargeting/xmap_project.props" />
 </Project>
