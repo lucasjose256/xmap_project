@@ -16,8 +16,7 @@ builder.Services.AddCors(options =>
     });
 });
 builder.Services.AddControllers();
-builder.Services.AddScoped<IAtividadeService, AtividadeService>();
-builder.Services.AddScoped<IProcessService, ProcessService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xmap_project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd421d8bd89f3af25b5d14aa32e263e65192adfc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c11cd7dbb4fb348e8e00eb5f3542f0e228260910")]
 [assembly: System.Reflection.AssemblyProductAttribute("xmap_project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xmap_project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

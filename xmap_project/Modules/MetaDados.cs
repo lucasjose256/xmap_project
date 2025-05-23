@@ -9,7 +9,7 @@ public class MetaDados
     public string ator { get; set; }
     
     public string lgpd { get; set; }
-    public int atividadeId { get; set; }
-    public Atividade atividade { get; set; }
+    public int? atividadeId { get; set; }
+    public Atividade? atividade { get; set; }
 }
 

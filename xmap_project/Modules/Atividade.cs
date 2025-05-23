@@ -7,8 +7,9 @@ public class Atividade
 
     public Raia Raia { get; set; }
 
-    public string raiaId { get; set; }
+    public int raiaId { get; set; }
     
     public string nome { get; set; }
+   public MetaDados MetaDados { get; set; }
     
 }

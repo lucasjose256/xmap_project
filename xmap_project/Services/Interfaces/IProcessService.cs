@@ -6,7 +6,7 @@ namespace xmap_project.Services.Interfaces
 {
     public interface IProcessService
     {
-        Task<Process> CreateProcessAsync(CreateProcessRequest request);
+        Task<Processo> CreateProcessAsync(CreateProcessRequest request);
         Task<IEnumerable<object>> GetAllProcessesAsync();
         Task<string> GetXmlAsync(int id);
         Task<object> AddMetaDadoAsync(int atividadeId, MetaDadosRequest request);

@@ -8,8 +8,11 @@ public class Raia
     
     public string laneReference { get; set; }// id da referencia da lane dentro do xml
 
-    public string processoId { get; set; }
+    public int processoId { get; set; }
 
-    public Process processo { get; set; }
+    public Processo processo { get; set; }
+    
+    public ICollection<Atividade> Atividades { get; set; }  // Navegação para muitas Atividades
+
     
 }
