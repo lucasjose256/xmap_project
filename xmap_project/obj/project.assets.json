@@ -2377,24 +2377,25 @@
     ]
   },
   "packageFolders": {
-    "/home/eproc-lucas/.nuget/packages/": {}
+    "/Users/lucasbarszcz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/xmap_project.csproj",
+      "projectUniqueName": "/Users/lucasbarszcz/RiderProjects/xmap_project/xmap_project/xmap_project.csproj",
       "projectName": "xmap_project",
-      "projectPath": "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/xmap_project.csproj",
-      "packagesPath": "/home/eproc-lucas/.nuget/packages/",
-      "outputPath": "/home/eproc-lucas/RiderProjects/xmap_project/xmap_project/obj/",
+      "projectPath": "/Users/lucasbarszcz/RiderProjects/xmap_project/xmap_project/xmap_project.csproj",
+      "packagesPath": "/Users/lucasbarszcz/.nuget/packages/",
+      "outputPath": "/Users/lucasbarszcz/RiderProjects/xmap_project/xmap_project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/eproc-lucas/.nuget/NuGet/NuGet.Config"
+        "/Users/lucasbarszcz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2472,7 +2473,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -25,6 +25,12 @@ namespace xmap_project.Controllers
             public string username { get; set; }
             public string Password { get; set; }
         }
+        public class LoginResgister
+        {
+            public string email { get; set; }
+            public string username { get; set; }
+            public string Password { get; set; }
+        }
 
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
@@ -41,14 +47,14 @@ namespace xmap_project.Controllers
         }
         
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] LoginRequest request)
+        public async Task<IActionResult> Register([FromBody] LoginResgister request)
         {
             var existingUser = await _context.users.AnyAsync(u => u.username == request.username);
             if (existingUser)
                 return BadRequest("Usuário já existe.");
 
             var newUser = new User
-            {   email= "none",
+            {   email= request.email,
                 username = request.username,
                 password = request.Password 
             };
